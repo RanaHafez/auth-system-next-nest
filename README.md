@@ -47,7 +47,7 @@ auth-system/
 ### 1. Clone the Repository
 
 ```bash
-git clone <YOUR_GITHUB_REPOSITORY_URL>
+git clone https://github.com/RanaHafez/auth-system-next-nest.git
 cd auth-system
 ```
 
