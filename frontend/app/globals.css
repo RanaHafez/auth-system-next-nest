@@ -1,0 +1,107 @@
+@import "tailwindcss";
+
+:root {
+  --background: #ff7977;
+  --foreground: #fffeff;
+  --button-colors: hsl(154, 59%, 51%);
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: Arial, Helvetica, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+input {
+  background-color: #ededed;
+  border-radius: 5px;
+  height: 50px;
+  width: 100%;
+  font-weight: bold;
+  padding: 20px;
+  color: #49484e;
+  border: #0a0a0a 1px none;
+  border: 1px solid rgba(241, 241, 241);
+  text-align: left;
+  background-color: white;
+}
+
+input:focus {
+  outline: none;
+  font-weight: 600;
+  border-color: hsl(248, 32%, 49%);
+}
+
+input::placeholder {
+  font-weight: bold;
+}
+
+.long-btn {
+  width: 100%;
+  background-color: var(--button-colors);
+  color: white;
+  padding: 20px;
+  font-weight: bold;
+  border-radius: 5px;
+}
+
+.forgot-password {
+  color: hsl(249, 10%, 26%);
+  font-weight: bold;
+}
+
+.add-text {
+  color: hsl(249, 10%, 26%);
+  font-weight: bold;
+}
+
+.main-card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.form-style {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 10px;
+  width: 50%;
+  height: fit-content;
+  background-color: white;
+  border-radius: 10px;
+  margin: 20px;
+  padding: 20px;
+}
+.redirect-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  gap: 2px;
+  font-size: 20px;
+}
+
+.redirect-link .link {
+  color: green;
+}
+.redirect-link .link:hover {
+  color: blue;
+}
